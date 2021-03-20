@@ -1,0 +1,15 @@
+image:
+  file: .gitpod.Dockerfile
+
+# Command to start on workspace startup
+tasks:
+  - command: zsh
+  - command: cd /usr/local/android-studio/bin/ && ./studio.sh
+    
+# Ports to expose on workspace startup
+ports:
+  - port: 5900
+    onOpen: ignore
+  - port: 6080
+    onOpen: open-preview
+
