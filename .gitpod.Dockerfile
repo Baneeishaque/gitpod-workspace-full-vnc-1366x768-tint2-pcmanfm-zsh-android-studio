@@ -1,7 +1,8 @@
 FROM baneeishaque/gitpod-workspace-full-vnc-1366x768-tint2-pcmanfm-zsh-android-sdk
 
-ARG androidStudioDownloadUrl="https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.1.2.0/android-studio-ide-201.7042882-linux.tar.gz"
-ARG androidStudioInstallationFile="android-studio-ide-201.7042882-linux.tar.gz"
+ARG androidStudioDownloadUrl="https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.1.3.0/android-studio-ide-201.7199119-linux.tar.gz"
+# TODO : Derive androidStudioInstallationFile from androidStudioDownloadUrl
+ARG androidStudioInstallationFile="android-studio-ide-201.7199119-linux.tar.gz"
 
 # RUN sudo apt update \
  # && sudo apt install -y \
@@ -16,3 +17,8 @@ RUN cd $HOME \
 RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh && sdk install java 8.0.242-open /usr/local/android-studio/jre && sdk default java 8.0.242-open"
 ENV JAVA_HOME="$HOME/.sdkman/candidates/java/current" 
 
+RUN cd $HOME \
+ && sudo apt update | tee -a /tmp/apt.log \
+ && sudo apt install -y \
+     dos2unix | tee -a /tmp/apt.log \
+ && sudo rm -rf /var/lib/apt/lists/*
