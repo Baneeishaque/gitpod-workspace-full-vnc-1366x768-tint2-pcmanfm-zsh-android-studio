@@ -22,3 +22,5 @@ RUN cd $HOME \
  && sudo apt install -y \
      dos2unix | tee -a /tmp/apt.log \
  && sudo rm -rf /var/lib/apt/lists/*
+
+RUN sed -i 's/plugins=(git)/plugins=(git gradle)/g' ~/.zshrc
