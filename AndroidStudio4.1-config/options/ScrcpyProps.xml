@@ -1,0 +1,6 @@
+<application>
+  <component name="com.codertainment.scrcpy.controller.model.ScrcpyProps">
+    <option name="bitRate" value="2" />
+    <option name="maxResolution" value="800" />
+  </component>
+</application>

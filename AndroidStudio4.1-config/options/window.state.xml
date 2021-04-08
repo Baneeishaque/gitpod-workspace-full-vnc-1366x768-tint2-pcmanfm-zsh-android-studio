@@ -1,0 +1,43 @@
+<application>
+  <component name="DimensionService">
+    <location key="WELCOME_SCREEN.0.0.1366.768" x="683" y="300" />
+    <size key="GridCell.Tab.0.left.0.0.1366.768" width="1324" height="179" />
+    <size key="GridCell.Tab.0.center.0.0.1366.768" width="1324" height="179" />
+    <size key="GridCell.Tab.0.right.0.0.1366.768" width="1324" height="179" />
+    <size key="GridCell.Tab.0.bottom.0.0.1366.768" width="1324" height="179" />
+  </component>
+  <component name="WindowManager">
+    <frame x="-1" y="-1" width="1368" height="744" extendedState="6" />
+    <layout>
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+    </layout>
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="279" y="0" width="802" height="707" key="#Plugins" timestamp="1617477531395">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="279" y="0" width="802" height="707" key="#Plugins/0.0.1366.738" timestamp="1617477531395" />
+    <state x="463" y="97" width="426" height="479" key="FileChooserDialogImpl" timestamp="1617823951955">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="97" width="426" height="479" key="FileChooserDialogImpl/0.0.1366.738" timestamp="1617823951955" />
+    <state x="907" y="541" width="400" height="200" key="ProcessPopupWindow" timestamp="1617836717049">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="907" y="541" width="400" height="200" key="ProcessPopupWindow/0.0.1366.738" timestamp="1617836717049" />
+    <state x="172" y="4" key="SettingsEditor" timestamp="1617857558961">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="172" y="4" key="SettingsEditor/0.0.1366.738" timestamp="1617857558961" />
+    <state x="683" y="342" key="WELCOME_SCREEN" timestamp="1617480144773">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="683" y="342" key="WELCOME_SCREEN/0.0.1366.738" timestamp="1617480144773" />
+  </component>
+</application>
