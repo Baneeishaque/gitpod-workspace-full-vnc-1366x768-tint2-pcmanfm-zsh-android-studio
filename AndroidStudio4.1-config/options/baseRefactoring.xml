@@ -1,0 +1,7 @@
+<application>
+  <component name="RefactoringSettings">
+    <option name="TYPE_COOK_EXHAUSTIVE" value="true" />
+    <option name="TYPE_COOK_COOK_OBJECTS" value="true" />
+    <option name="TYPE_COOK_PRODUCE_WILDCARDS" value="true" />
+  </component>
+</application>
