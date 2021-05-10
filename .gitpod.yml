@@ -4,7 +4,7 @@ image:
 # Command to start on workspace startup
 tasks:
   - command: zsh
-  - command: mkdir -p ~/.config/Google && ln -s `pwd`/AndroidStudio4.1-config ~/.config/Google/AndroidStudio4.1 && mkdir -p ~/.local/share/Google && ln -s `pwd`/AndroidStudio4.1-local ~/.local/share/Google/AndroidStudio4.1 && cd /usr/local/android-studio/bin/ && ./studio.sh
+  - command: mkdir -p ~/.config/Google && ln -s `pwd`/AndroidStudio4.2-config ~/.config/Google/AndroidStudio4.2 && mkdir -p ~/.local/share/Google && ln -s `pwd`/AndroidStudio4.2-local ~/.local/share/Google/AndroidStudio4.2 && cd /usr/local/android-studio/bin/ && ./studio.sh
   
 # Ports to expose on workspace startup
 ports:
