@@ -1,12 +1,11 @@
 image:
   file: .gitpod.Dockerfile
 
-# Command to start on workspace startup
-tasks:
-  - command: zsh
-  - command: mkdir -p ~/.config/Google && ln -s `pwd`/AndroidStudio4.2-config ~/.config/Google/AndroidStudio4.2 && mkdir -p ~/.local/share/Google && ln -s `pwd`/AndroidStudio4.2-local ~/.local/share/Google/AndroidStudio4.2 && cd /usr/local/android-studio/bin/ && ./studio.sh
+# tasks:
+#   - init: /usr/bin/start-vnc-session.sh
+#   - command: zsh
+#   - command: mkdir -p ~/.config/Google && ln -s `pwd`/AndroidStudio4.2-config ~/.config/Google/AndroidStudio4.2 && mkdir -p ~/.local/share/Google && ln -s `pwd`/AndroidStudio4.2-local ~/.local/share/Google/AndroidStudio4.2 && cd /usr/local/android-studio/bin/ && ./studio.sh
   
-# Ports to expose on workspace startup
 ports:
   - port: 5900
     onOpen: ignore

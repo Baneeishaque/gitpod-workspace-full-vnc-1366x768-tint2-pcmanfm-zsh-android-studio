@@ -10,13 +10,11 @@
 <a href="https://gitpod.io/#https://github.com/Baneeishaque/gitpod-workspace-full-vnc-1366x768-tint2-pcmanfm-zsh-android-studio"><img src="https://icons-for-free.com/iconfiles/png/512/gitpod-1324440164066425542.png" alt="Gitpod IDE" width="100" height="100"></a>
 <a href="https://github1s.com/Baneeishaque/gitpod-workspace-full-vnc-1366x768-tint2-pcmanfm-zsh-android-studio"><img src="https://raw.githubusercontent.com/conwnet/github1s/master/resources/images/logo.svg" alt="Github1s Editor" width="100" height="100"></a>
 
-## Tint 2 : 16.7  
-## PCMan File Manager : 1.3.1  
-## ZSH : 5.8  
-### &nbsp;&nbsp;Oh My ZSH : 95a06f3  
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Git
-#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Gradle
-## Android SDK : 30  
-## Android Studio : 4.2  
+### Base Image : [baneeishaque/gitpod-workspace-full-vnc-1366x768-tint2-pcmanfm-zsh-android-sdk](https://hub.docker.com/repository/docker/baneeishaque/gitpod-workspace-full-vnc-1366x768-tint2-pcmanfm-zsh-android-sdk)  
+
+## Additional Tools
+### &nbsp;&nbsp; - Android Studio (Stable) : 4.2.1
+### &nbsp;&nbsp; - Dos2Unix : 7.4.0-2
+### &nbsp;&nbsp; - ZSH Gradle Plugin (Oh My Zsh) : 706b2f3
 
 [//]: # "[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/Baneeishaque/gitpod-workspace-full-vnc-1366x768-tint2-pcmanfm-zsh-android-studio)"

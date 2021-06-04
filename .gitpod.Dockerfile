@@ -1,8 +1,8 @@
 FROM baneeishaque/gitpod-workspace-full-vnc-1366x768-tint2-pcmanfm-zsh-android-sdk
 
-ARG androidStudioDownloadUrl="https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.2.0.24/android-studio-ide-202.7322048-linux.tar.gz"
+ARG androidStudioDownloadUrl="https://redirector.gvt1.com/edgedl/android/studio/ide-zips/4.2.1.0/android-studio-ide-202.7351085-linux.tar.gz"
 # TODO : Derive androidStudioInstallationFile from androidStudioDownloadUrl
-ARG androidStudioInstallationFile="android-studio-ide-202.7322048-linux.tar.gz"
+ARG androidStudioInstallationFile="android-studio-ide-202.7351085-linux.tar.gz"
 
 # RUN sudo apt update \
  # && sudo apt install -y \
@@ -10,17 +10,17 @@ ARG androidStudioInstallationFile="android-studio-ide-202.7322048-linux.tar.gz"
  # && sudo rm -rf /var/lib/apt/lists/*
 
 RUN cd $HOME \
- && wget $androidStudioDownloadUrl | tee -a /tmp/wget-androidStudio.log \
- && sudo tar -xvf $androidStudioInstallationFile -C /usr/local/ | tee -a /tmp/tar-androidStudio.log\
+ && wget $androidStudioDownloadUrl \
+ && sudo tar -xvf $androidStudioInstallationFile -C /usr/local/ \
  && rm $androidStudioInstallationFile
 
 RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh && sdk install java 11.0.8-open /usr/local/android-studio/jre && sdk default java 11.0.8-open"
 ENV JAVA_HOME="$HOME/.sdkman/candidates/java/current" 
 
 RUN cd $HOME \
- && sudo apt update | tee -a /tmp/apt.log \
+ && sudo apt update \
  && sudo apt install -y \
-     dos2unix | tee -a /tmp/apt.log \
+     dos2unix \
  && sudo rm -rf /var/lib/apt/lists/*
 
 RUN sed -i 's/plugins=(git)/plugins=(git gradle)/g' ~/.zshrc
